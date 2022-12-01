@@ -38,3 +38,11 @@ async def set_score(request):
         logger.info(f"Score unchanged {score}")
         return empty(status=304)
     return empty(status=200)
+
+#/bin/bash
+
+# activate venv
+../venv/bin/activate
+
+# start bot
+python3 simple_echo_bot.py
